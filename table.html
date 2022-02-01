@@ -13,31 +13,75 @@
     <!--tr 태그는 표의 가로열인 행을 정의합니다.-->
     <!--th 태그는 표의 맨위인 헤더를 나타냅니다.-->
     <!--td 태그는 표안에 들어가는 데이터를 나타냅니다.-->
+    <!--thead 표의 헤더임을 정의할 때 사용-->
+    <!--tbody 표의 body임을 정의할 때 사용-->
+    <!--tfoot 표의 헤더임을 정의할 때 사용-->
     <table>
-      <tr>
-        <th>Animal</th>
-        <th>Average mass [kg (lb)]</th>
-        <th>Maximum mass [kg (lb)]</th>
-        <th>Flighted</th>
-      </tr>
-      <tr>
-        <td>Ostrich</td>
-        <td>104(230)</td>
-        <td>156.8 (346)</td>
-        <td>No</td>
-      </tr>
-      <tr>
-        <td>Soamli Ostrich</td>
-        <td>90(200)</td>
-        <td>130 (287)</td>
-        <td>No</td>
-      </tr>
-      <tr>
-        <td>Wild Turkey</td>
-        <td>13.5 (29.8)</td>
-        <td>39 (86)</td>
-        <td>Yes</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Animal</th>
+          <th>Average mass [kg (lb)]</th>
+          <th>Maximum mass [kg (lb)]</th>
+          <th>Flighted</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ostrich</td>
+          <td>104(230)</td>
+          <td>156.8 (346)</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Soamli Ostrich</td>
+          <td>90(200)</td>
+          <td>130 (287)</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Wild Turkey</td>
+          <td>13.5 (29.8)</td>
+          <td>39 (86)</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--colspan은 표에 세로로 여러칸을 나눌 수 있게 해주는 속성이다.-->
+    <!--rowspan은 표에 가로로 여러칸을 나눌 수 있게 해주는 속성이다.-->
+    <h2>V2</h2>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Animal</th>
+          <th colspan="2">Average Mass</th>
+          <th rowspan="2">Flighted</th>
+        </tr>
+        <tr>
+          <th>KG</th>
+          <th>LB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ostrich</td>
+          <td>104</td>
+          <td>230</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Soamli Ostrich</td>
+          <td>90</td>
+          <td>200</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Wild Turkey</td>
+          <td>13.5</td>
+          <td>29.8</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
