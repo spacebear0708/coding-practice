@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1>Forms Demo</h1>
+    <button>OUTSIDE FORM</button>
 
     <!--form 태그는 데이터를 묶는 컨테이너 역할을 하고 지정된 주소로 제출한다.-->
     <!--action 속성은 동작을 할 때 주소를 지정한다.-->
@@ -16,6 +17,9 @@
 
     <!--label 태그는 input 태그와 연결 해주고 입력 해야하는 데이터를 더 쉽게 이해 할 수 있게 한다.-->
     <!--for, id 속성은 label, input 태그를 연결 시켜주는 속성이다.-->
+
+    <!--button 태그는 form태그 안에 있으면 폼을 제출하는 버튼으로 사용된다.-->
+    <!--type 속성은 속성을 지정했을 때 buttom 태그의 역할을 정의해준다.-->
     <form action="/tacos">
       <p>
         <label for="username">Enter a Username : </label>
@@ -25,6 +29,7 @@
         <label for="password">Enter a Password : </label>
         <input id="password" type="password" placeholder="password" />
       </p>
+      <button>IN THE MIDDLE</button>
       <p>
         <label for="color">Enter a Color : </label>
         <input id="color" type="color" />
@@ -33,6 +38,9 @@
         <label for="number">Enter a Number</label>
         <input id="number" type="number" placeholder="enter a number" />
       </p>
+      <button>Submit</button>
+      <button type="button">PLEASE DO NOT SUBMIT THE FORM</button>
+      <input type="submit" value="Click Me!" />
     </form>
   </body>
 </html>
